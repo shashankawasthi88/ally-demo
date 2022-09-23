@@ -1,0 +1,16 @@
+id = 4be6e1b6-7259-4ee4-b8e4-de821e63025e
+
+[relations]
+
+[relations.collections]
+rootDirectory = postman/collections
+files[] = {"id":"23234629-42f2fb83-1090-45e8-bbf9-e046b6ac1970","path":"Ally API Reference Collection.json","metaData":{}}
+
+[relations.collections.metaData]
+
+[relations.apiDefinition]
+rootDirectory = postman/schemas
+files[] = {"path":"index.yaml","metaData":{}}
+
+[relations.apiDefinition.metaData]
+type = openapi:3
