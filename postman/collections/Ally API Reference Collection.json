@@ -167,6 +167,38 @@
 					"body": "{\n  \"message\": \"proident dolore adipisicing\"\n}"
 				}
 			]
+		},
+		{
+			"name": "New end point",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5e7a58a0-80cb-407e-b462-db108680ccf5",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "b6e71226-370a-4232-a06b-2cb48755be3d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/newednpoint",
+					"path": [
+						"newednpoint"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
