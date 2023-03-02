@@ -1,15 +1,15 @@
 {
 	"info": {
-		"_postman_id": "42f2fb83-1090-45e8-bbf9-e046b6ac1970",
+		"_postman_id": "f75c7f94-912d-460c-8e6c-991215e06024",
 		"name": "Ally API Reference Collection",
 		"description": "Buy or rent spacecrafts",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "23234629-42f2fb83-1090-45e8-bbf9-e046b6ac1970"
+		"_uid": "5000688-f75c7f94-912d-460c-8e6c-991215e06024"
 	},
 	"item": [
 		{
 			"name": "Read a spacecraft",
-			"id": "31f23ed4-8577-46fb-b349-400c06dbe1c7",
+			"id": "7e248f34-ea51-4882-ade4-7e6a35003311",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -41,7 +41,7 @@
 			},
 			"response": [
 				{
-					"id": "c8711e6b-3c5e-4be6-929a-714e92223673",
+					"id": "b9f3d39b-d317-4806-8c8b-2f025523b08f",
 					"name": "The spacecraft corresponding to the provided `spacecraftId`",
 					"originalRequest": {
 						"method": "GET",
@@ -73,6 +73,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -83,7 +84,7 @@
 					"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"dolore qui cillum\",\n  \"type\": \"capsule\",\n  \"description\": \"ex velit ut nulla\"\n}"
 				},
 				{
-					"id": "149ed0ac-ff3c-4a2e-b3ea-3c8cc4870090",
+					"id": "61accee5-9a92-4c90-89f2-faed646f8700",
 					"name": "No spacecraft found for the provided `spacecraftId`",
 					"originalRequest": {
 						"method": "GET",
@@ -115,6 +116,7 @@
 					"status": "Not Found",
 					"code": 404,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -125,7 +127,7 @@
 					"body": "{\n  \"message\": \"proident dolore adipisicing\"\n}"
 				},
 				{
-					"id": "c1618522-8c4b-4eca-b9f4-d0147de335e8",
+					"id": "63dd9f76-ac20-412e-b054-1421c0f2cfe0",
 					"name": "Unexpected error",
 					"originalRequest": {
 						"method": "GET",
@@ -157,6 +159,7 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -174,7 +177,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5e7a58a0-80cb-407e-b462-db108680ccf5",
+						"id": "ed827a30-27b7-4c6f-b075-0ef59b9de97c",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -184,7 +187,7 @@
 					}
 				}
 			],
-			"id": "b6e71226-370a-4232-a06b-2cb48755be3d",
+			"id": "d1940929-3dcd-4548-a1ec-0b91774a89cd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},

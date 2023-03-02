@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "6d253a16-e794-45be-8cd1-1f08b1e7c4e4",
+		"name": "C1",
+		"description": "Buy or rent spacecrafts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "5000688-6d253a16-e794-45be-8cd1-1f08b1e7c4e4"
+	},
+	"item": [
+		{
+			"name": "spacecrafts",
+			"item": [
+				{
+					"name": "{spacecraftId}",
+					"item": [
+						{
+							"name": "Read a spacecraft",
+							"id": "467feed3-a9e0-466a-82b1-48f9bc4f7f46",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?spacecraftId 1=quis ex exercitation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"spacecrafts",
+										":spacecraftId"
+									],
+									"query": [
+										{
+											"description": "(Required) The unique identifier of a spacecraft",
+											"key": "spacecraftId 1",
+											"value": "quis ex exercitation"
+										}
+									],
+									"variable": [
+										{
+											"key": "spacecraftId",
+											"value": "in sit"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "a89274b2-16bb-4b50-9ea0-de71f064b8c1",
+									"name": "The spacecraft corresponding to the provided `spacecraftId`",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?spacecraftId 1=quis ex exercitation",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"query": [
+												{
+													"description": "(Required) The unique identifier of a spacecraft",
+													"key": "spacecraftId 1",
+													"value": "quis ex exercitation"
+												}
+											],
+											"variable": [
+												{
+													"key": "spacecraftId",
+													"value": "in sit"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"enabled": true
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"magna anim\",\n  \"name\": \"commodo nulla aute laborum labore\",\n  \"type\": \"satellite\",\n  \"description\": \"Lorem aliqua ut\"\n}"
+								},
+								{
+									"id": "abc4ebcd-a7c1-4206-862a-8151e914aa9d",
+									"name": "No spacecraft found for the provided `spacecraftId`",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?spacecraftId 1=quis ex exercitation",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"query": [
+												{
+													"description": "(Required) The unique identifier of a spacecraft",
+													"key": "spacecraftId 1",
+													"value": "quis ex exercitation"
+												}
+											],
+											"variable": [
+												{
+													"key": "spacecraftId",
+													"value": "in sit"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"enabled": true
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"ut deserunt\"\n}"
+								},
+								{
+									"id": "3d54a4c4-b20b-486b-a4dd-2b69541761c7",
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?spacecraftId 1=quis ex exercitation",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"query": [
+												{
+													"description": "(Required) The unique identifier of a spacecraft",
+													"key": "spacecraftId 1",
+													"value": "quis ex exercitation"
+												}
+											],
+											"variable": [
+												{
+													"key": "spacecraftId",
+													"value": "in sit"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"enabled": true
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"ut deserunt\"\n}"
+								}
+							]
+						}
+					],
+					"id": "739a8bae-aa2a-4594-b771-8ab23a9186ec"
+				}
+			],
+			"id": "c214b5fe-659b-4442-ae24-05d9494e146b"
+		},
+		{
+			"name": "Read a spacecraft view change",
+			"id": "aa3306d5-2401-43da-9c08-b1b18a3f82f2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/spacecrafts/:spacecraftId/view?spacecraftId 1=ad Duis consequat",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"spacecrafts",
+						":spacecraftId",
+						"view"
+					],
+					"query": [
+						{
+							"description": "(Required) The unique identifier of the spacecraft",
+							"key": "spacecraftId 1",
+							"value": "ad Duis consequat"
+						}
+					],
+					"variable": [
+						{
+							"key": "spacecraftId",
+							"value": "ad Duis consequat"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "db501901-9522-4b67-9ca0-02c14fc58979",
+					"name": "The spacecraft corresponding to the provided `spacecraftId`",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId/view?spacecraftId 1=ad Duis consequat",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId",
+								"view"
+							],
+							"query": [
+								{
+									"description": "(Required) The unique identifier of the spacecraft",
+									"key": "spacecraftId 1",
+									"value": "ad Duis consequat"
+								}
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "ad Duis consequat"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"enabled": true
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"id\": \"commodo\",\n  \"name\": \"qui dolor sint\",\n  \"type\": \"spaceplane\",\n  \"description\": \"nostrud\"\n}"
+				},
+				{
+					"id": "9b439567-0d74-44ac-8f92-8f8a93351b55",
+					"name": "No spacecraft found for the provided `spacecraftId`",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId/view?spacecraftId 1=ad Duis consequat",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId",
+								"view"
+							],
+							"query": [
+								{
+									"description": "(Required) The unique identifier of the spacecraft",
+									"key": "spacecraftId 1",
+									"value": "ad Duis consequat"
+								}
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "ad Duis consequat"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"enabled": true
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"message\": \"exercitation in sint\"\n}"
+				},
+				{
+					"id": "4bceffcc-72d5-43ec-aac0-2c84bf3971ba",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId/view?spacecraftId 1=ad Duis consequat",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId",
+								"view"
+							],
+							"query": [
+								{
+									"description": "(Required) The unique identifier of the spacecraft",
+									"key": "spacecraftId 1",
+									"value": "ad Duis consequat"
+								}
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "ad Duis consequat"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"enabled": true
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"message\": \"exercitation in sint\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-Api-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "d6107f9d-0fb2-44f8-b266-59b3b8839dc5",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
