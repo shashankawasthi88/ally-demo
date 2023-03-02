@@ -63,7 +63,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-   /spacecrafts/{spacecraftId}/view2:
+  /spacecrafts/{spacecraftId}/view2:
     parameters:
       - name: spacecraftId
         description: The unique identifier of the spacecraft

@@ -5,9 +5,9 @@ id = fdd62911-1f62-4fc4-808c-20f41e18c59b
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"5000688-f75c7f94-912d-460c-8e6c-991215e06024","path":"Ally API Reference Collection.json","metaData":{}}
-files[] = {"id":"5000688-6d253a16-e794-45be-8cd1-1f08b1e7c4e4","path":"C1.json","metaData":{}}
-files[] = {"id":"5000688-e119b1f2-469a-4907-9536-f3e13a645f97","path":"C2.json","metaData":{}}
+files[] = {"id":"5000688-f75c7f94-912d-460c-8e6c-991215e06024","path":"Ally API Reference Collection.json","metaData":{"generateCollectionPreferences":"{\"updateCollectionSync\":true}"}}
+files[] = {"id":"5000688-6d253a16-e794-45be-8cd1-1f08b1e7c4e4","path":"C1.json","metaData":{"generateCollectionPreferences":"{\"updateCollectionSync\":true}"}}
+files[] = {"id":"5000688-e119b1f2-469a-4907-9536-f3e13a645f97","path":"C2.json","metaData":{"generateCollectionPreferences":"{\"updateCollectionSync\":true}"}}
 
 [relations.collections.metaData]
 
